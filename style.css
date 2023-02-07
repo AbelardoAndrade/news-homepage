@@ -1,0 +1,482 @@
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+body {
+  max-width: 100%;
+  width: 80%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+/*/NAVBAR AND MENU/*/
+
+nav {
+  max-width: 100%;
+  width: 100%;
+  margin-inline: auto;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-list ul {
+  padding: 0 1rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+
+/*/ MOBILE MENU/*/
+.mobile-menu-icon {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+/*/ MOBILE MENU/*/
+
+
+.principal {
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+}
+
+/*/SECTION LEFT/*/
+
+
+.left {
+  max-width: 100%;
+  width: 65%;
+}
+
+.banner {
+  max-width: 100%;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-banner {
+  display: flex;
+  padding-top: 1rem;
+  gap: 6rem;
+}
+
+.tittle {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+
+  color: hsl(240, 100%, 5%);
+  font-size: 4rem;
+  text-align: left;
+  max-width: 100%;
+  width: 70%;
+  letter-spacing: 3px;
+}
+
+.paragraph {
+  padding: 1rem 2rem;
+  max-width: 100%;
+  width: 95%;
+  font-family: "Inter", sans-serif;
+  margin-inline: auto;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  color: hsl(236, 13%, 42%);
+}
+
+.read-more {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 5px;
+  margin-top: 2rem;
+}
+
+/*/ INÍCIO DA SECTION RIGHT FIM DA SECTION LEFT/*/
+
+.right {
+  background-color: hsl(240, 100%, 5%);
+  padding: 2rem;
+  max-width: 100%;
+  width: 32%;
+}
+
+.new {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: 1rem 0;
+  color: hsl(35, 77%, 62%);
+  font-size: 3.2rem;
+}
+
+.subtittle {
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-top: 3.5rem;
+}
+
+.text1 {
+  color: hsl(233, 8%, 79%);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid hsla(233, 8%, 79%, 0.158);
+  padding-top: 0.5rem;
+  padding-bottom: 2.2rem;
+  letter-spacing: 3px;
+}
+
+.text2 {
+  color: hsl(233, 8%, 79%);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid hsla(233, 8%, 79%, 0.5);
+  padding-top: 0.5rem;
+  padding-bottom: 2.2rem;
+  letter-spacing: 3px;
+}
+
+.text3 {
+  color: hsl(233, 8%, 79%);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+/*/FINAL DA SECTION RIGHT /*/
+
+.topics {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: none;
+  padding: 0;
+}
+
+.img-fluid {
+  padding: 1rem;
+}
+
+.card-title {
+  color: hsl(233, 8%, 79%);
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.card-subtitle a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+.card-subtitle a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.card-text {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+.banner-mobile img {
+  display: none;
+}
+
+
+
+
+
+/*/RESPONSIVIDADE/*/
+@media (max-width: 992px) and (max-width: 914px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-banner {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-mobile img {
+    display: block;
+  }
+
+  .banner img {
+    display: none;
+  }
+  .topics {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+/*/RESPONSIVIDADE/*/
+
+
+@media (max-width: 375px) {
+  .card {
+    display: flex;
+  }
+  .card img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-body {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-md-4 {
+    width: 40%;
+    height: 60%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .col-md-8 {
+    width: 60%;
+    height: 60%;
+  }
+
+  .card-title {
+    color: hsl(233, 8%, 79%);
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -1rem;
+  }
+
+  .card-subtitle {
+    font-weight: 800;
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+  }
+  .card-text {
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+  .banner-mobile img {
+    display: block;
+    max-width: 100%;
+  }
+  .banner img {
+    display: none;
+  }
+  .card-body {
+    width: 100%;
+  }
+  .content-banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*/RESPONSIVIDADE/*/
+
+
+@media (max-width: 412px) {
+  .card {
+    display: flex;
+  }
+  .card img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-body {
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-md-4 {
+    width: 40%;
+    height: 60%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .col-md-8 {
+    width: 60%;
+    height: 60%;
+  }
+
+  .card-title {
+    color: hsl(233, 8%, 79%);
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -1rem;
+  }
+
+  .card-subtitle {
+    font-weight: 800;
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+  }
+  .card-text {
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+  .banner-mobile img {
+    display: block;
+    max-width: 100%;
+  }
+  .banner img {
+    display: none;
+  }
+  .card-body {
+    width: 100%;
+  }
+  .content-banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+/*/RESPONSIVIDADE/*/
+
+
+@media screen and (max-width: 1440px) {
+  .nav-bar {
+    padding: 2rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .open {
+    display: block;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 5rem;
+    bottom: 0;
+    right: -100%;
+    width: 80%;
+    background-color: white;
+    transition: right 0.5s;
+  }
+
+  .mobile-menu.open {
+    right: 0;
+  }
+}
